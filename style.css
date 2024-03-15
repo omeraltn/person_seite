@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Murecho", sans-serif;
+}
+img {
+  width: 100%;
+}
+section {
+  padding: 6rem 0;
+  background: #122e44;
+}
+
+.section-title {
+  margin-bottom: 3rem;
+}
+.section-title h2 {
+  position: relative;
+  text-align: center;
+  color: #ffff;
+  font-size: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-title h2:hover {
+  background-color: #24caac;
+}
+
+/* HEADER Start */
+header {
+  background: #24292D;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem 0;
+}
+.nav-links {
+  display: flex;
+  column-gap: 0.5rem;
+}
+.nav-links li a {
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.8rem;
+}
+.nav-links li a:hover {
+  background: #24caac;
+}
+
+.logo h2 a {
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 2.4rem;
+}
+#menu-bar{
+  display: none;
+}
+
+/* Header End */
+/* Home Start */
+.inner-anasayfa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  color: #fff;
+  height: 78vh;
+}
+.inner-anasayfa .child-anasayfa {
+  flex-basis: 45%;
+}
+.span-child {
+  color: #e0376f;
+}
+.child-anasayfa h1 {
+  font-size: 5rem;
+  color: #24caac;
+}
+.child-anasayfa p {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+.btn {
+  background: #24caac;
+  padding: 1.2rem 2.8rem;
+  border-radius: 2rem;
+  border: none;
+  border: 1px solid #24caac;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background: transparent;
+}
+.btn a {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Home End */
+
+/* Yazilimlar Start */
+#yazilimlar{
+  padding: 1rem auto o auto;
+  
+}
+
+#yazilimlar .tittle {
+  width: 100%;
+  text-align: center;
+  padding-block: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+#yazilimlar .tittle:hover {
+  background: #24caac;
+}
+.card-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .card {
+  border: 1px solid #24caac;
+  padding: 2rem;
+  color: #fff;
+  max-width: 40rem;
+  cursor: pointer;
+  height: 100%;
+  background: rgba(55, 66, 80, 0.281);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-out;
+  margin-bottom: 2rem;
+}
+.card-container .card:hover {
+  box-shadow: 0px 0px 21px -2px rgba(29, 217, 150, 0.62);
+}
+.card-container .card:nth-child(1) {
+  height: 16.7rem;
+}
+.card-container .card .card-head i {
+  font-size: 2.4rem;
+  margin: 0.5rem;
+  color: #24caac;
+}
+.card-container .card .card-body h2 {
+  font-weight: 700;
+}
+.card-container .card .card-body p {
+  font-size: 1.6rem;
+}
+
+/* Yazilimlar End */
+
+/* Sertifikasyonlar  Start */
+#sertifikalarim{
+  padding: 1rem auto o auto;
+}
+#sertifikalarim .section-tittle {
+  width: 100%;
+  text-align: center;
+  padding-block: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+#sertifikalarim .section-tittle:hover {
+  background: #24caac;
+}
+
+.sertifika-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.sertifika-container .card {
+  max-width: 30rem;
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid #24caac;
+  transition: all 0.1s;
+  border-radius: 1rem;
+  color: #fff;
+  min-height: 300px;
+}
+.sertifika-container .card:hover {
+  box-shadow: 0px 0px 21px -2px rgba(29, 217, 150, 0.62);
+}
+.sertifika-container .card .card-head img {
+  object-fit: cover;
+  object-position: center;
+}
+.sertifika-container .card .card-body .card-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+.sertifika-container .card .card-body .card-text p i {
+  color: goldenrod;
+}
+.sertifika-container .card .card-body p:nth-child(2) {
+  font-size: 2.2rem;
+}
+/* Sertifikasyonlar  End */
+
+/* Erfolg  Start */
+.basarilar{
+  padding: 1rem auto o auto;
+ 
+}
+
+.basarilar .erfolg {
+  width: 100%;
+  text-align: center;
+  padding-block: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+.basarilar .erfolg:hover {
+  background: #24caac;
+}
+
+.basarilar .erfolg-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: 3rem;
+}
+
+.basarilar .erfolg-container .image {
+  flex-basis: 45%;
+  margin: 0;
+  min-width: 40rem;
+  border-radius: 2rem;
+}
+.basarilar .erfolg-container .image img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2rem;
+}
+.basarilar .erfolg-container .card-container2 {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 30rem;
+  min-height: 80%;
+
+  justify-content: center;
+  gap: 2rem;
+}
+
+.basarilar .erfolg-container .card-container2 .card2 .card {
+  height: 5rem;
+  width: 5rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  padding: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.basarilar .erfolg-container .card-container2 .card2 .card:hover {
+  box-shadow: 0px 0px 21px -2px rgba(29, 217, 150, 0.62);
+  transform: scale(1.1);
+}
+
+.basarilar .erfolg-container .card-container2 .card2 .gelb {
+  background: goldenrod;
+}
+
+.basarilar .erfolg-container .card-container2 .card2 .pink {
+  background: rgb(12, 199, 199);
+}
+.basarilar .erfolg-container .card-container2 .card2 .blue {
+  background: palevioletred;
+}
+.basarilar .erfolg-container .card-container2 .card2 .schwarz {
+  background: rgb(52, 51, 51);
+}
+/* Erfolg  End */
+
+/* Kunde Start */
+
+.hakkimda .tittle {
+  width: 100%;
+  text-align: center;
+  padding-block: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.hakkimda .tittle:hover {
+  background: #24caac;
+}
+.hakkimda .kunde-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.hakkimda .kunde-container .kunde {
+  flex-basis: 47%;
+  color: #fff;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  min-width: 40rem;
+}
+.hakkimda .kunde-container .kunde .image {
+  border-radius: 50%;
+}
+.hakkimda .kunde-container .kunde .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  width: 9rem;
+}
+.hakkimda .kunde-container .kunde p:nth-child(2) {
+  margin-top: 1rem;
+}
+.hakkimda .kunde-container .kunde p:nth-child(3) {
+  color: #06715d;
+  margin-block: 1rem;
+}
+.pa a {
+  text-decoration: none;
+  color: #06715d;
+  font-size: 1.6rem;
+}
+.pa a:hover {
+  text-decoration: underline;
+}
+
+/* Kunde  End */
+
+/* Kommunikation  Start */
+.iletisim .kommunikation {
+  width: 100%;
+  text-align: center;
+  padding-block: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+.iletisim .kommunikation:hover {
+  background: #24caac;
+}
+.iletisim .komm-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.iletisim .komm-container .image {
+  flex-basis: 40%;
+  min-width: 40rem;
+  height: 100%;
+}
+
+.iletisim .komm-container .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.iletisim .komm-container .form {
+  flex-basis: 40%;
+  padding: 2rem;
+  padding-bottom: 2rem;
+  background: #323d48;
+  min-width: 40rem;
+}
+.iletisim .komm-container .form input {
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  background: #262e32;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  color: gray;
+  padding-left: 1.3rem;
+}
+
+.iletisim .komm-container .form textarea {
+  padding: 0.5rem;
+  background: #262e32;
+  border: none;
+  resize: none;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  outline: none;
+  color: gray;
+  padding-left: 1.3rem;
+  width: 100%;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+.iletisim .komm-container .form .btn {
+  width: 100%;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.iletisim .komm-container .form input:focus,
+textarea:focus {
+  border: 1px solid white;
+}
+.iletisim .komm-container .form textarea:focus {
+  border: 1px solid white;
+}
+/* Kommunikation  End */
+
+/* Footer  Start */
+.footer {
+  background: #232b2f;
+  padding-top: 0 !important;
+}
+
+.footer .foot-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #cec9c9;
+}
+.footer .foot-container .box {
+  flex: 45%;
+  max-width: 30rem;
+}
+.footer .foot-container .box2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7.4rem;
+}
+.footer .foot-container .box3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.footer .foot-container .box3 div {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.footer .foot-container .box2 p:nth-child(3) {
+  text-align: left;
+  display: inline;
+}
+.footer .foot-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.footer .foot-container p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.footer .foot-container p:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  float: left;
+}
+.footer .foot-container p i {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.footer .foot-container p i:hover {
+  color: #24caac;
+}
+
+.footer .foot-container p a {
+  color: #fff;
+  transition: all 0.3s;
+}
+.footer .foot-container p a:hover {
+  text-decoration: underline;
+}
+.footer .foot-container .box4 {
+  margin-top: 1rem;
+}
+.footer .foot-container .box4 p {
+  width: 100%;
+}
+.footer .foot-container .box4 p input {
+  width: 100%;
+  font-size: 1.4rem;
+  background: #323d48;
+  color: gray;
+  text-indent: 2rem;
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  border-radius: 2rem;
+}
+.footer .foot-container .box4 p button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+/* Footer  End */
+
